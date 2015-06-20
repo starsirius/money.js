@@ -1,6 +1,20 @@
-# money.js / fx() 
+***This is a fork of the money.js to add a additional `factory` method that, when invoked, creates a new instance of the `fx`.***
 
-Simple and tiny JavaScript library for realtime currency conversion and exchange rate calculation, from any currency, to any currency. 
+```javascript
+var fx1 = require('money');
+var fx2 = require('money');
+fx1 == fx2  // true
+
+var fx3 = require('money').factory();
+var fx4 = require('money').factory();
+fx3 == fx4  // false
+
+// Do stuff as usual with fx3 and fx4...
+```
+
+# money.js / fx()
+
+Simple and tiny JavaScript library for realtime currency conversion and exchange rate calculation, from any currency, to any currency.
 
 **money.js** is lightweight, has no dependencies, and works great client-side or server-side. Use standalone or as a nodeJS/npm and AMD/requireJS module.
 
